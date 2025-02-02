@@ -1,9 +1,7 @@
 ﻿using BlazorUserApp.Server.DTOs;
 using BlazorUserApp.Server.Repositories;
-using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace BlazorUserApp.Server.Controllers
 {

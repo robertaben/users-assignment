@@ -10,8 +10,14 @@ builder.Services.AddDbContext<UsersDbContext>(options => options.UseSqlite("Data
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerConfiguration();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
 
 var app = builder.Build();
+app.UseCors("AllowAll");
 
 using (var scope = app.Services.CreateScope())
 {
