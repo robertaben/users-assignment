@@ -12,6 +12,14 @@ User Management application provides a simple CRUD interface for managing users.
 ##  Database
 Project uses SQLite as the database for storing user data.
 
+## 🧪 Testing
+This project includes unit tests for the repository layer and model validation. Tools used:
+
+- MSTest
+- FluentAssertions
+- Entity Framework Core In-Memory Database
+- DataAnnotations Validator
+  
 ## API Documentation
 This project uses **Swagger** for API documentation. To access the Swagger UI, run the API and navigate to:
 ```
@@ -21,8 +29,7 @@ https://localhost:7174/index.html
 ## 💻 Getting Started
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-username/BlazorUserApp.git
-cd BlazorUserApp
+git clone https://github.com/robertaben/users-assignment.git
 ```
 
 ### 2️⃣ Run the API Backend
