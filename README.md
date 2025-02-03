@@ -47,10 +47,10 @@ dotnet run
 🚀 **Client runs on** `https://localhost:7181/`
 
 ## 🔄 API Endpoints
-| Method | Endpoint         | Description           |
-|--------|----------------|----------------------|
-| GET    | /api/users      | Get all users        |
-| POST   | /api/users      | Add a new user       |
-| PUT    | /api/users/{id} | Update an existing user |
-| DELETE | /api/users/{id} | Delete a user        |
+| Method | Endpoint            | Description           |
+|--------|---------------------|-----------------------|
+| GET    | /api/users          | Get all users         |
+| POST   | /api/users          | Add a new user        |
+| PUT    | /api/users/{userId} | Update an existing user |
+| DELETE | /api/users/{userId} | Delete a user        |
 
