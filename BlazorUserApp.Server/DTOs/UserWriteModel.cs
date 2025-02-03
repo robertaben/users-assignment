@@ -7,12 +7,12 @@ namespace BlazorUserApp.Server.DTOs
         [Required]
         [MinLength(2, ErrorMessage = "First name must be at least 2 characters.")]
         [MaxLength(50, ErrorMessage = "First name cannot exceed 50 characters.")]
-        [RegularExpression(@"^[A-Za-z]+$", ErrorMessage = "First name can only contain letters.")]
+        [RegularExpression(@"^[A-Za-zĄČĘĖĮŠŲŪŽąčęėįšųūž]+$", ErrorMessage = "First name can only contain letters")]
         public string FirstName { get; set; }
 
         [MinLength(2, ErrorMessage = "Last name must be at least 2 characters.")]
         [MaxLength(50, ErrorMessage = "Last name cannot exceed 50 characters.")]
-        [RegularExpression(@"^[A-Za-z]+$", ErrorMessage = "Last name can only contain letters.")]
+        [RegularExpression(@"^[A-Za-zĄČĘĖĮŠŲŪŽąčęėįšųūž]+$", ErrorMessage = "Last name can only contain letters")]
         [Required]
         public string LastName { get; set; }
 
